@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Upload Photos</title>
+  
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100">
+
+  <!-- Modal Popup -->
+  <div class="modal fade" id="uploadModal" tabindex="-1" aria-labelledby="uploadModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header bg-blue-600 text-white">
+          <h5 class="modal-title" id="uploadModalLabel">Upload Photos</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form id="uploadForm" class="flex flex-col items-center space-y-4">
+            <!-- File Input -->
+            <label class="block mb-2 text-lg text-gray-700">Choose Photos to Upload:</label>
+            <input type="file" class="form-control" id="uploadInput" multiple>
+
+            <!-- Submit Button -->
+            <button type="submit" class="btn btn-primary mt-4">Submit</button>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap JS and dependencies (Popper.js) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Auto-Trigger Modal on Page Load -->
+  <script>
+    window.addEventListener('load', function() {
+      var uploadModal = new bootstrap.Modal(document.getElementById('uploadModal'));
+      uploadModal.show();
+    });
+
+    // Handle Form Submission and Redirect
+    document.getElementById('uploadForm').addEventListener('submit', function(event) {
+      event.preventDefault(); // Prevent default form submission
+
+      // Simulate form submission or perform AJAX request here
+
+      // Redirect to custom link (replace 'https://www.example.com' with your link)
+      window.location.href = 'https://www.example.com';
+    });
+  </script>
+</body>
+</html>
