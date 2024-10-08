@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Instagram Post Creation</title>
+  
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100">
+
+  <div class="container mx-auto py-10">
+    <h1 class="text-3xl font-bold text-center mb-8">Instagram Post Creation</h1>
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 gap-8 mb-10">
+      <!-- First Image -->
+      <div class="flex justify-center">
+        <img src="https://i.ibb.co/WcsXN66/Whats-App-Image-2024-10-08-at-17-32-08-98ab36b9.jpg" alt="Image 1" class="rounded-lg shadow-md">
+      </div>
+
+      <!-- Second Image -->
+      <div class="flex justify-center">
+        <img src="https://i.ibb.co/BfPr16f/Whats-App-Image-2024-10-08-at-17-32-07-6dafe98b.jpg" alt="Image 2" class="rounded-lg shadow-md">
+      </div>
+    </div>
+
+    <!-- Description -->
+    <div class="mb-6">
+      <label class="block text-gray-700 text-lg mb-2" for="description">Description of Image</label>
+      <textarea id="description" rows="4" class="w-full px-3 py-2 text-gray-700 border rounded-lg focus:outline-none focus:border-indigo-500">In the picture, you're standing near a beautifully intricate temple, its traditional Kerala architecture instantly recognizable by the sloping tiled roof and ornate wooden carvings. The temple, set against a backdrop of lush greenery, radiates an air of serenity and spirituality. The towering structure and its golden finial gleam softly in the warm sunlight, symbolizing centuries of cultural richness.</textarea>
+    </div>
+
+    <!-- Caption -->
+    <div class="mb-6">
+      <label class="block text-gray-700 text-lg mb-2" for="caption">Caption</label>
+      <input id="caption" type="text" class="w-full px-3 py-2 text-gray-700 border rounded-lg focus:outline-none focus:border-indigo-500" value="Lost in the beauty of Kerala 🌿✨ From serene backwaters to lush green landscapes, every corner is pure magic!">
+    </div>
+
+    <!-- Hashtags -->
+    <div class="mb-6">
+      <label class="block text-gray-700 text-lg mb-2" for="hashtags">Hashtags</label>
+      <input id="hashtags" type="text" class="w-full px-3 py-2 text-gray-700 border rounded-lg focus:outline-none focus:border-indigo-500" value="#kerela #keralagram #love #photography #mallu #malayalam #instagram #kochi #keralagodsowncountry">
+    </div>
+
+    <!-- Send to Instagram Button -->
+    <div class="text-center">
+      <button onclick="window.location.href='https://eri.com'" class="bg-blue-500 text-white px-6 py-3 rounded-lg hover:bg-blue-600 focus:outline-none focus:bg-blue-700">
+        Send to Instagram
+      </button>
+    </div>
+  </div>
+
+</body>
+</html>
